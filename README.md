@@ -1,6 +1,6 @@
 # wp-tgbsboiler
 
-This is a Wordpress starter theme based on TwentyFourteen
+This is a Wordpress starter theme based on TwentyFourteen.
 
 ## Installation
 
@@ -12,8 +12,6 @@ git clone https://github.com/gabrysiak/wp-tgbsboiler.git
 
 1. [Bootstrap 3.2.0](http://getbootstrap.com/)
 
-
-
 ## Contributing
 
 1. Fork it!
@@ -22,14 +20,6 @@ git clone https://github.com/gabrysiak/wp-tgbsboiler.git
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 
-## History
-
-TODO: Write history
-
-## Credits
-
-TODO: Write credits
-
 ## License
 
-TODO: Write license
+MIT License
