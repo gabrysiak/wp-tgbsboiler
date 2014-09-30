@@ -8,9 +8,11 @@ This is a Wordpress starter theme based on TwentyFourteen
 git clone https://github.com/gabrysiak/wp-tgbsboiler.git
 ```
 
-## Usage
+## Includes
 
-TODO: Write usage instructions
+1. [Bootstrap 3.2.0](http://getbootstrap.com/)
+
+
 
 ## Contributing
 
