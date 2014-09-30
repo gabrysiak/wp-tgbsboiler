@@ -1,13 +1,55 @@
-*.log
-.htaccess
-sitemap.xml
-sitemap.xml.gz
-wp-config.php
-wp-content/advanced-cache.php
-wp-content/backup-db/
-wp-content/backups/
+# Wordpress Specific Files #
+############################
+# wp-content/uploads/
+mail.php
 wp-content/blogs.dir/
-wp-content/cache/
 wp-content/upgrade/
-wp-content/uploads/
+wp-content/backup-db/
+wp-content/advanced-cache.php
 wp-content/wp-cache-config.php
+wp-content/cache/
+wp-content/backups/
+sitemap.xml.gz
+wp-config-sample.php
+
+# Ignore Sublime Text Config File #
+###################################
+sftp-config.json
+
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
