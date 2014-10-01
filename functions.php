@@ -267,6 +267,10 @@ function tgbsboiler_scripts() {
 	// Load Angular js
 	wp_enqueue_script( 'angular-script', get_template_directory_uri() . '/js/libs/angularjs/angular.min.js', array( 'jquery', 'bootstrap-script' ), '1.2.25', true ); 
 	
+	// Load Angular app js
+	wp_enqueue_script( 'angular-app', get_template_directory_uri() . '/js/app/tgbsboiler.module.js', array( 'jquery', 'bootstrap-script', 'angular-script' ), '1.0', true ); 
+	wp_enqueue_script( 'angular-controller', get_template_directory_uri() . '/js/app/tgbsboiler.controller.main.js', array( 'jquery', 'bootstrap-script', 'angular-script', 'angular-app' ), '1.0', true ); 
+
 	// Load main js
 	wp_enqueue_script( 'tgbsboiler-script', get_template_directory_uri() . '/js/functions.js', array( 'jquery', 'bootstrap-script', 'angular-script', 'modernizr' ), '20140616', true );
 }

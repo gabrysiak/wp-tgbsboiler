@@ -11,17 +11,18 @@
 
 		</div><!-- #main -->
 
-		<footer id="colophon" class="site-footer" role="contentinfo">
+		<footer id="colophon" class="site-footer" role="contentinfo" ng-controller="Main as main">
 
 			<?php get_sidebar( 'footer' ); ?>
-
+	
 			<div class="site-info">
-				<?php do_action( 'tgbsboiler_credits' ); ?>
-				<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'tgbsboiler' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'tgbsboiler' ), 'WordPress' ); ?></a>
+				<a href="#">{{ main.title }} {{ main.version }}</a>
 			</div><!-- .site-info -->
 		</footer><!-- #colophon -->
 	</div><!-- #page -->
 
 	<?php wp_footer(); ?>
+	<!-- Manually Bootstrap Angular App -->
+	<script>angular.bootstrap(document, ['tgbsboiler']);</script>
 </body>
 </html>
