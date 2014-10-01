@@ -4,8 +4,14 @@ This is a Wordpress starter theme based on TwentyFourteen.
 
 ## Installation
 
+Clone repo
 ```
 git clone https://github.com/gabrysiak/wp-tgbsboiler.git
+```
+
+Install Bower Dependencies
+```
+bower install
 ```
 
 ## Includes
