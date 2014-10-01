@@ -531,6 +531,15 @@ if ( ! class_exists( 'Featured_Content' ) && 'plugins.php' !== $GLOBALS['pagenow
 }
 
 /**
+ * Change admin footer text
+ */
+function change_footer_admin () {
+  echo 'Powered by TGBSBOILER';
+}
+ 
+add_filter('admin_footer_text', 'change_footer_admin');
+
+/**
  * Include the TGM_Plugin_Activation class.
  */
 require_once get_template_directory() . '/inc/class-tgm-plugin-activation.php';
