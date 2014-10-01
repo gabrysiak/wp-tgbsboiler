@@ -1,6 +1,6 @@
 # wp-tgbsboiler
 
-This is a Wordpress starter theme based on TwentyFourteen.
+This is a Wordpress starter theme based on TwentyFourteen.  Theme includes JSON Api [WP-API](https://github.com/WP-API/WP-API) endpoint /api.
 
 ## Installation
 
