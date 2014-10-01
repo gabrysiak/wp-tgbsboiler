@@ -3,8 +3,7 @@
  * The template for displaying featured posts on the front page
  *
  * @package WordPress
- * @subpackage Twenty_Fourteen
- * @since Twenty Fourteen 1.0
+ * @subpackage TGBSBOILER
  */
 ?>
 
@@ -16,16 +15,16 @@
 			if ( 'grid' == get_theme_mod( 'featured_content_layout' ) ) {
 				the_post_thumbnail();
 			} else {
-				the_post_thumbnail( 'twentyfourteen-full-width' );
+				the_post_thumbnail( 'tgbsboiler-full-width' );
 			}
 		endif;
 	?>
 	</a>
 
 	<header class="entry-header">
-		<?php if ( in_array( 'category', get_object_taxonomies( get_post_type() ) ) && twentyfourteen_categorized_blog() ) : ?>
+		<?php if ( in_array( 'category', get_object_taxonomies( get_post_type() ) ) && tgbsboiler_categorized_blog() ) : ?>
 		<div class="entry-meta">
-			<span class="cat-links"><?php echo get_the_category_list( _x( ', ', 'Used between list items, there is a space after the comma.', 'twentyfourteen' ) ); ?></span>
+			<span class="cat-links"><?php echo get_the_category_list( _x( ', ', 'Used between list items, there is a space after the comma.', 'tgbsboiler' ) ); ?></span>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 

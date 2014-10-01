@@ -1,26 +1,26 @@
 <?php
 /**
- * Implement Custom Header functionality for Twenty Fourteen
+ * Implement Custom Header functionality for TGBSBOILER
  *
  * @package WordPress
- * @subpackage Twenty_Fourteen
- * @since Twenty Fourteen 1.0
+ * @subpackage TGBSBOILER
+ * 
  */
 
 /**
  * Set up the WordPress core custom header settings.
  *
- * @since Twenty Fourteen 1.0
+ * @since TGBSBOILER 1.0
  *
- * @uses twentyfourteen_header_style()
- * @uses twentyfourteen_admin_header_style()
- * @uses twentyfourteen_admin_header_image()
+ * @uses tgbsboiler_header_style()
+ * @uses tgbsboiler_admin_header_style()
+ * @uses tgbsboiler_admin_header_image()
  */
-function twentyfourteen_custom_header_setup() {
+function tgbsboiler_custom_header_setup() {
 	/**
-	 * Filter Twenty Fourteen custom-header support arguments.
+	 * Filter TGBSBOILER custom-header support arguments.
 	 *
-	 * @since Twenty Fourteen 1.0
+	 * @since TGBSBOILER 1.0
 	 *
 	 * @param array $args {
 	 *     An array of custom-header support arguments.
@@ -35,26 +35,26 @@ function twentyfourteen_custom_header_setup() {
 	 *                                          the Appearance > Header screen.
 	 * }
 	 */
-	add_theme_support( 'custom-header', apply_filters( 'twentyfourteen_custom_header_args', array(
+	add_theme_support( 'custom-header', apply_filters( 'tgbsboiler_custom_header_args', array(
 		'default-text-color'     => 'fff',
 		'width'                  => 1260,
 		'height'                 => 240,
 		'flex-height'            => true,
-		'wp-head-callback'       => 'twentyfourteen_header_style',
-		'admin-head-callback'    => 'twentyfourteen_admin_header_style',
-		'admin-preview-callback' => 'twentyfourteen_admin_header_image',
+		'wp-head-callback'       => 'tgbsboiler_header_style',
+		'admin-head-callback'    => 'tgbsboiler_admin_header_style',
+		'admin-preview-callback' => 'tgbsboiler_admin_header_image',
 	) ) );
 }
-add_action( 'after_setup_theme', 'twentyfourteen_custom_header_setup' );
+add_action( 'after_setup_theme', 'tgbsboiler_custom_header_setup' );
 
-if ( ! function_exists( 'twentyfourteen_header_style' ) ) :
+if ( ! function_exists( 'tgbsboiler_header_style' ) ) :
 /**
  * Styles the header image and text displayed on the blog
  *
- * @see twentyfourteen_custom_header_setup().
+ * @see tgbsboiler_custom_header_setup().
  *
  */
-function twentyfourteen_header_style() {
+function tgbsboiler_header_style() {
 	$text_color = get_header_textcolor();
 
 	// If no custom color for text is set, let's bail.
@@ -63,7 +63,7 @@ function twentyfourteen_header_style() {
 
 	// If we get this far, we have custom styles.
 	?>
-	<style type="text/css" id="twentyfourteen-header-css">
+	<style type="text/css" id="tgbsboiler-header-css">
 	<?php
 		// Has the text been hidden?
 		if ( ! display_header_text() ) :
@@ -85,20 +85,20 @@ function twentyfourteen_header_style() {
 	</style>
 	<?php
 }
-endif; // twentyfourteen_header_style
+endif; // tgbsboiler_header_style
 
 
-if ( ! function_exists( 'twentyfourteen_admin_header_style' ) ) :
+if ( ! function_exists( 'tgbsboiler_admin_header_style' ) ) :
 /**
  * Style the header image displayed on the Appearance > Header screen.
  *
- * @see twentyfourteen_custom_header_setup()
+ * @see tgbsboiler_custom_header_setup()
  *
- * @since Twenty Fourteen 1.0
+ * @since TGBSBOILER 1.0
  */
-function twentyfourteen_admin_header_style() {
+function tgbsboiler_admin_header_style() {
 ?>
-	<style type="text/css" id="twentyfourteen-admin-header-css">
+	<style type="text/css" id="tgbsboiler-admin-header-css">
 	.appearance_page_custom-header #headimg {
 		background-color: #000;
 		border: none;
@@ -124,17 +124,17 @@ function twentyfourteen_admin_header_style() {
 	</style>
 <?php
 }
-endif; // twentyfourteen_admin_header_style
+endif; // tgbsboiler_admin_header_style
 
-if ( ! function_exists( 'twentyfourteen_admin_header_image' ) ) :
+if ( ! function_exists( 'tgbsboiler_admin_header_image' ) ) :
 /**
  * Create the custom header image markup displayed on the Appearance > Header screen.
  *
- * @see twentyfourteen_custom_header_setup()
+ * @see tgbsboiler_custom_header_setup()
  *
- * @since Twenty Fourteen 1.0
+ * @since TGBSBOILER 1.0
  */
-function twentyfourteen_admin_header_image() {
+function tgbsboiler_admin_header_image() {
 ?>
 	<div id="headimg">
 		<?php if ( get_header_image() ) : ?>
@@ -144,4 +144,4 @@ function twentyfourteen_admin_header_image() {
 	</div>
 <?php
 }
-endif; // twentyfourteen_admin_header_image
+endif; // tgbsboiler_admin_header_image

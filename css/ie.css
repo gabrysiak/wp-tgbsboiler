@@ -104,7 +104,7 @@ a.post-thumbnail:hover {
 
 .widget blockquote,
 .widget .wp-caption,
-.widget_twentyfourteen_ephemera .entry-meta a {
+.widget_tgbsboiler_ephemera .entry-meta a {
 	color: #b3b3b3;
 }
 
@@ -130,7 +130,7 @@ a.post-thumbnail:hover {
 	background-color: #1a1a1a;
 }
 
-.widget_twentyfourteen_ephemera > ol > li {
+.widget_tgbsboiler_ephemera > ol > li {
 	border-bottom: 1px solid #4d4d4d;
 }
 
@@ -182,7 +182,7 @@ a.post-thumbnail:hover {
 	background-color: #fafafa;
 }
 
-.content-sidebar .widget_twentyfourteen_ephemera > ol > li {
+.content-sidebar .widget_tgbsboiler_ephemera > ol > li {
 	border-bottom: 1px solid #e5e5e5;
 }
 
@@ -734,16 +734,16 @@ a.post-thumbnail:hover {
 	margin-bottom: 18px;
 }
 
-.ie8 .footer-sidebar .widget_twentyfourteen_ephemera .entry-title,
-.ie8 .footer-sidebar .widget_twentyfourteen_ephemera .entry-meta,
-.ie8 .footer-sidebar .widget_twentyfourteen_ephemera .wp-caption-text,
-.ie8 .footer-sidebar .widget_twentyfourteen_ephemera .post-format-archive-link,
-.ie8 .footer-sidebar .widget_twentyfourteen_ephemera .entry-content table,
-.ie8 .primary-sidebar .widget_twentyfourteen_ephemera .entry-title,
-.ie8 .primary-sidebar .widget_twentyfourteen_ephemera .entry-meta,
-.ie8 .primary-sidebar .widget_twentyfourteen_ephemera .wp-caption-text,
-.ie8 .primary-sidebar .widget_twentyfourteen_ephemera .post-format-archive-link,
-.ie8 .primary-sidebar .widget_twentyfourteen_ephemera .entry-content table {
+.ie8 .footer-sidebar .widget_tgbsboiler_ephemera .entry-title,
+.ie8 .footer-sidebar .widget_tgbsboiler_ephemera .entry-meta,
+.ie8 .footer-sidebar .widget_tgbsboiler_ephemera .wp-caption-text,
+.ie8 .footer-sidebar .widget_tgbsboiler_ephemera .post-format-archive-link,
+.ie8 .footer-sidebar .widget_tgbsboiler_ephemera .entry-content table,
+.ie8 .primary-sidebar .widget_tgbsboiler_ephemera .entry-title,
+.ie8 .primary-sidebar .widget_tgbsboiler_ephemera .entry-meta,
+.ie8 .primary-sidebar .widget_tgbsboiler_ephemera .wp-caption-text,
+.ie8 .primary-sidebar .widget_tgbsboiler_ephemera .post-format-archive-link,
+.ie8 .primary-sidebar .widget_tgbsboiler_ephemera .entry-content table {
 	font-size: 11px;
 	line-height: 1.6363636363;
 }
@@ -970,7 +970,7 @@ a.post-thumbnail:hover {
 }
 
 .ie7 .entry-meta > span,
-.ie7 .widget_twentyfourteen_ephemera .entry-title {
+.ie7 .widget_tgbsboiler_ephemera .entry-title {
 	margin-right: 20px;
 }
 
@@ -988,7 +988,7 @@ a.post-thumbnail:hover {
 	max-width: 474px;
 }
 
-.ie7 .content-sidebar .widget_twentyfourteen_ephemera .widget-title {
+.ie7 .content-sidebar .widget_tgbsboiler_ephemera .widget-title {
 	padding-top: 7px;
 }
 
@@ -1074,7 +1074,7 @@ a.post-thumbnail:hover {
 .rtl .attachment a,
 .rtl .gallery a,
 .rtl .wp-caption a,
-.rtl .widget_twentyfourteen_ephemera .entry-content a {
+.rtl .widget_tgbsboiler_ephemera .entry-content a {
 	display: inline;
 }
 

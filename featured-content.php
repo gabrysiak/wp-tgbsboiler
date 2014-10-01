@@ -3,8 +3,7 @@
  * The template for displaying featured content
  *
  * @package WordPress
- * @subpackage Twenty_Fourteen
- * @since Twenty Fourteen 1.0
+ * @subpackage TGBSBOILER
  */
 ?>
 
@@ -12,13 +11,13 @@
 	<div class="featured-content-inner">
 	<?php
 		/**
-		 * Fires before the Twenty Fourteen featured content.
+		 * Fires before the TGBSBOILER featured content.
 		 *
-		 * @since Twenty Fourteen 1.0
+		 * @since TGBSBOILER 1.0
 		 */
-		do_action( 'twentyfourteen_featured_posts_before' );
+		do_action( 'tgbsboiler_featured_posts_before' );
 
-		$featured_posts = twentyfourteen_get_featured_posts();
+		$featured_posts = tgbsboiler_get_featured_posts();
 		foreach ( (array) $featured_posts as $order => $post ) :
 			setup_postdata( $post );
 
@@ -27,11 +26,11 @@
 		endforeach;
 
 		/**
-		 * Fires after the Twenty Fourteen featured content.
+		 * Fires after the TGBSBOILER featured content.
 		 *
-		 * @since Twenty Fourteen 1.0
+		 * @since TGBSBOILER 1.0
 		 */
-		do_action( 'twentyfourteen_featured_posts_after' );
+		do_action( 'tgbsboiler_featured_posts_after' );
 
 		wp_reset_postdata();
 	?>

@@ -2,11 +2,9 @@
 /**
  * The template for displaying Category pages
  *
- * @link http://codex.wordpress.org/Template_Hierarchy
  *
  * @package WordPress
- * @subpackage Twenty_Fourteen
- * @since Twenty Fourteen 1.0
+ * @subpackage TGBSBOILER
  */
 
 get_header(); ?>
@@ -17,7 +15,7 @@ get_header(); ?>
 			<?php if ( have_posts() ) : ?>
 
 			<header class="archive-header">
-				<h1 class="archive-title"><?php printf( __( 'Category Archives: %s', 'twentyfourteen' ), single_cat_title( '', false ) ); ?></h1>
+				<h1 class="archive-title"><?php printf( __( 'Category Archives: %s', 'tgbsboiler' ), single_cat_title( '', false ) ); ?></h1>
 
 				<?php
 					// Show an optional term description.
@@ -41,7 +39,7 @@ get_header(); ?>
 
 					endwhile;
 					// Previous/next page navigation.
-					twentyfourteen_paging_nav();
+					tgbsboiler_paging_nav();
 
 				else :
 					// If no content, include the "No posts found" template.

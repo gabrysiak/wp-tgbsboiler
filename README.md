@@ -10,7 +10,10 @@ git clone https://github.com/gabrysiak/wp-tgbsboiler.git
 
 ## Includes
 
-1. [Bootstrap 3.2.0](http://getbootstrap.com/)
+1. [Bower](http://bower.io/) Support
+2. [Bootstrap 3.2.0](http://getbootstrap.com/)
+3. [AngularJS 1.2.25](http://angularjs.org/)
+4. [Modernizr 2.8.3](http://modernizr.com/)
 
 ## Contributing
 

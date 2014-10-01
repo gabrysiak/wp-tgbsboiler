@@ -1,0 +1,24 @@
+{
+  "name": "tgbsboiler",
+  "author": "Tom Gabrysiak",
+  "version": "1.0.0",
+  "homepage": "https://github.com/gabrysiak/wp-tgbsboiler",
+  "description": "Wordpress boiler theme based on TwentyFourteen.",
+  "main": "style.css",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angularjs": "~1.2.25",
+    "modernizr": "~2.8.3",
+    "bootstrap": "~3.2.0"
+  }
+}

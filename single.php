@@ -3,8 +3,7 @@
  * The Template for displaying all single posts
  *
  * @package WordPress
- * @subpackage Twenty_Fourteen
- * @since Twenty Fourteen 1.0
+ * @subpackage TGBSBOILER
  */
 
 get_header(); ?>
@@ -23,7 +22,7 @@ get_header(); ?>
 					get_template_part( 'content', get_post_format() );
 
 					// Previous/next post navigation.
-					twentyfourteen_post_nav();
+					tgbsboiler_post_nav();
 
 					// If comments are open or we have at least one comment, load up the comment template.
 					if ( comments_open() || get_comments_number() ) {
